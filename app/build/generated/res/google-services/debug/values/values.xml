@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">463381878265-fordmfs75kekc3igb9e40vfgl13ptnmj.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://patient-linkage-and-retention.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">463381878265</string>
+    <string name="google_api_key" translatable="false">AIzaSyC8iK8bG5gg6HHfNp4syn9fXk7lvtesxEw</string>
+    <string name="google_app_id" translatable="false">1:463381878265:android:debad656ab3e0ee0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC8iK8bG5gg6HHfNp4syn9fXk7lvtesxEw</string>
+    <string name="google_storage_bucket" translatable="false">patient-linkage-and-retention.appspot.com</string>
+    <string name="project_id" translatable="false">patient-linkage-and-retention</string>
+</resources>

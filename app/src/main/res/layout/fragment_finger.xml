@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="-1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/White"
+            android:text="Informations sur la visite"
+            android:background="@color/Goldenrod"/>
+        <TextView
+            android:id="@+id/tv_patient_a_visiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textSize="22dp"
+            android:textStyle="bold|italic"
+            android:text="Nom Prénom"
+            />
+        <TextView
+            android:id="@+id/tv_raison_visite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Raison : Distribution de médicament"
+            />
+        <TextView
+            android:id="@+id/tv_lieuvisite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:text="Type de visite : A domicile"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="#dd9911"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_columnSpan="4"
+            android:weightSum="1"
+            android:layout_x="0dp"
+            android:layout_y="140dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="Enregistrement/Confirmation d'empreintes digitales"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+        </LinearLayout>
+        <TextView
+                android:text="Il n'y a pas d'empreinte pour ce patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_columnSpan="4"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:id="@+id/textView"
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"/>
+        <Button
+            android:id="@+id/buttonCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Capturez l'empreinte"
+            android:layout_column="0"
+            android:drawableLeft="@drawable/ic_checkmark_holo_light"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:paddingRight="40dp"
+          />
+        <Button
+            android:id="@+id/bt_save_finger"
+            android:drawableLeft="@drawable/ic_checkmark_holo_light"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:text="Enregistrer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:paddingRight="40dp"
+         />
+        <Button
+            android:id="@+id/buttonMatch"
+            android:layout_width="198dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:layout_columnSpan="2"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:drawableLeft="@drawable/ic_checkmark_holo_light"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/imageViewVerify"
+            android:contentDescription="fingerprint_verify_image"
+            android:layout_width="308dp"
+            android:layout_height="251dp"
+            android:layout_x="33dp"
+            android:layout_y="113dp"
+            android:layout_gravity="center"
+            android:layout_columnSpan="2"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:visibility="gone"
+            android:src="@android:drawable/picture_frame" />
+
+        <ImageView
+                android:id="@+id/imageViewRegister"
+                android:contentDescription="Finger print register image"
+                android:layout_width="308dp"
+                android:layout_height="251dp"
+                android:layout_x="33dp"
+                android:layout_y="113dp"
+                android:layout_gravity="center"
+                android:layout_columnSpan="2"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_marginTop="30dp"
+                android:src="@android:drawable/picture_frame" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/im_finger_matched"
+            android:src="@drawable/fingerprint"
+            android:visibility="gone"/>
+
+
+
+        <Button
+        android:id="@+id/buttonSDKTest"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_x="765dp"
+        android:layout_y="1dp"
+        android:text="sdktest"
+        android:textSize="36sp"
+        android:visibility="gone" />
+
+        <EditText
+        android:id="@+id/editLog"
+        android:layout_width="372dp"
+        android:layout_height="16dp"
+        android:layout_x="775dp"
+        android:layout_y="100dp"
+        android:visibility="gone"
+        android:inputType="none|textMultiLine" />
+
+        <ToggleButton
+        android:id="@+id/toggleButtonAutoOn"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_x="217dp"
+        android:layout_y="58dp"
+        android:text="auto_on_enabled"
+        android:textOff="auto_on_disabled"
+        android:textOn="auto_on_enabled"
+        android:visibility="gone"/>
+
+        <ToggleButton
+        android:id="@+id/toggleButtonCaptureModeN"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_x="217dp"
+        android:layout_y="213dp"
+        android:text="capture_mode_n_off"
+        android:textOff="capture_mode_n_off"
+        android:textOn="capture_mode_n_on"
+        android:visibility="gone"/>
+
+        <ToggleButton
+        android:id="@+id/toggleButtonSmartCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="217dp"
+        android:layout_y="110dp"
+        android:text="smart_capture"
+        android:textOff="smart_capture_off"
+        android:textOn="smart_capture_on"
+        android:visibility="gone"/>
+
+        <ToggleButton
+        android:id="@+id/toggleButtonNFIQ"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_x="217dp"
+        android:layout_y="163dp"
+        android:text="NFIQ_disabled"
+        android:textOff="NFIQ_disabled"
+        android:textOn="NFIQ_enabled"
+        android:visibility="gone"/>
+        <Button
+        android:id="@+id/buttonSetBrightness100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="423dp"
+        android:layout_y="300dp"
+        android:text="set_brightness_100"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonSetBrightness0"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_x="425dp"
+        android:layout_y="248dp"
+        android:text="set_brightness_0"
+        android:visibility="gone"/>
+
+    <ToggleButton
+        android:id="@+id/ToggleButtonUSBBulkMode64"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_x="424dp"
+        android:layout_y="194dp"
+        android:text="usb_bulk_mode_64_off"
+        android:textOff="usb_bulk_mode_64_off"
+        android:textOn="usb_bulk_mode_64_on"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonReadSN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="442dp"
+        android:layout_y="393dp"
+        android:text="Read Serial number"
+        android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/buttonLedOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="29dp"
+            android:layout_y="40dp"
+            android:text="ledon"
+            android:textSize="28sp"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_row="0"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+            <ImageView
+            android:id="@+id/imageView1"
+            android:contentDescription="secugen_device_image"
+            android:layout_width="188dp"
+            android:layout_height="176dp"
+            android:layout_x="245dp"
+            android:layout_y="257dp"
+            android:layout_columnSpan="2"
+            android:layout_column="2"
+                android:visibility="gone"
+            android:layout_row="1"
+            android:src="@drawable/hamster4"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="551dp"
+            android:layout_height="wrap_content"
+            android:layout_x="14dp"
+            android:layout_y="517dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        <CheckBox
+        android:id="@+id/checkBoxMatched"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="409dp"
+        android:layout_y="412dp"
+        android:text="cb_matched"
+        android:layout_columnSpan="2"
+        android:layout_column="2"
+        android:layout_row="2"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/Brown"
+       android:orientation="vertical"
+        android:layout_x="0dp"
+        android:layout_y="505dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:text="Powered by SOLUTIONS S.A" />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

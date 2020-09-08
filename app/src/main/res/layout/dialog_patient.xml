@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="match_parent" >
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Nom"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_patient_nom"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Prenom"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_patient_prenom"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Age"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_patient_age"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="DateNaissance"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_patient_datenaissance"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Statut"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_patient_statut"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TableLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:stretchColumns="2" >
+<TableRow>
+<Button
+android:id="@+id/btsave_patient"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Enregistrer" />
+<Button
+android:id="@+id/btcancel_patient"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Annuler" />
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

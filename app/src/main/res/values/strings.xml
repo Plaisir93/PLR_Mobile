@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CHT</string>
+    <string name="action_settings">Se déconnecter</string>
+
+    <!-- String Forme de Localisation Patient -->
+    <string name="client_locator_title">Forme de Localisation Patient</string>
+    <string name="inf_personnelles">Informations Personnelles</string>
+    <string name="contact_tel">Contacts Téléphoniques</string>
+    <string name="lieu_residence">Lieu de Résidence</string>
+    <string name="tr_institution">Institution</string>
+    <string name="tr_codeST">Code Identification</string>
+    <string name="tr_nom">Nom</string>
+    <string name="tr_prenom">Prénom</string>
+    <string name="tr_statutM">Statut Matrimonial</string>
+    <string name="tr_prefContact">Préférence Contact</string>
+    <string name="save_text">Enregistrer</string>
+    <string name="cancel_text">Annuler</string>
+    <string name="add_text">Nouveau</string>
+    <string name="tr_dpd">Directions précise Domicile</string>
+    <string name="tr_avd">Accepte Visite Domicile</string>
+    <string name="tr_departement">Département</string>
+    <string name="personnes_contact">Personnes de Contact</string>
+    <string name="tr_commune">Commune</string>
+    <string name="tr_adresse">Adresse</string>
+    <string name="tr_nom_complet">Nom Complet</string>
+    <string name="lieux_frquentes">Lieux/Groupes Fréquentés</string>
+    <string name="tr_nouveau_tel">Nouveau Numéro Téléphone</string>
+    <string name="modif_adresse_physique">Modifier l\'adresse physique</string>
+    <string name="numero_tel">Numéro Téléphone</string>
+    <string name="type_tel">Type Téléphone</string>
+    <string name="type_contact">Type de Contact</string>
+    <string name="statut_vih">Statut VIH</string>
+    <string name="moncash_natcash">Moncash/Natcash</string>
+    <string name="verifier">Vérifier</string>
+    <string name="a_whatsapp">A Whatsapp</string>
+    <string name="est_prefere">Est le numéro préféré</string>
+    <string name="meme_adresse">Habite à la même adresse</string>
+    <string name="et_direction">Directions à domicile, y compris importantes repères près de la maison</string>
+    <string name="accepte_visite">Accepte visite à domicile</string>
+    <string name="ajout_modif_contact">Ajout/Modifier le contact fonctionnel</string>
+
+    <string name="type_lieu_groupe_frequente">Type</string>
+    <string name="adresse_lieu_groupe_frequente">Adresse</string>
+    <string name="telephone_lieu_groupe_frequente">Téléphone</string>
+    <string name="frequence_visite_lieu_groupe_frequente">Fréquence de visite</string>
+
+
+    <string-array name="statut_vih">
+    <item>--Choisir--</item>
+    <item>Positif</item>
+    <item>Négatif</item>
+    <item>Non déterminé</item>
+    </string-array>
+    <string-array name="type_contact">
+        <item>Parent Proche</item>
+        <item>Conjoint</item>
+        <item>Ami(e)</item>
+        <item>Paire</item>
+        <item>Autre contact PV-VIH</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="frequence_visite">
+        <item>--Choisir--</item>
+        <item>Tous les jours</item>
+        <item>Tous les dimanches</item>
+        <item></item>
+        <item>Autre contact PV-VIH</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="lieu_groupe_frequente">
+        <item>--Choisir--</item>
+        <item>Eglise</item>
+        <item>Association</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="departement">
+        <item>--Choisir--</item>
+        <item>Artibonite</item>
+        <item>Centre</item>
+        <item>Grand-Anse</item>
+        <item>Nippes</item>
+        <item>Nord</item>
+        <item>Nord-Est</item>
+        <item>Nord-Ouest</item>
+        <item>Ouest</item>
+        <item>Sud</item>
+        <item>Sud-Est</item>
+    </string-array>
+    <string-array name="statut_matrimoniale">
+        <item>--Choisir--</item>
+        <item>Célibataire</item>
+        <item>Concubinage</item>
+        <item>Marié(e)</item>
+        <item>Veuf</item>
+    </string-array>
+    <string-array name="preference_contact">
+        <item>--Choisir--</item>
+        <item>Téléphone</item>
+        <item>Visite</item>
+    </string-array>
+    <string-array name="moncash_natcash">
+        <item>Aucun</item>
+        <item>Moncash</item>
+        <item>Natcash</item>
+    </string-array>
+    <string-array name="oui_non">
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+    <string-array name="type_tel">
+        <item>--Choisir--</item>
+        <item>Personnel</item>
+        <item>Domicile</item>
+        <item>Autre</item>
+    </string-array>
+    <!-- Fin String Forme de Localisation Patient -->
+    <string name="hello_world">Hello world!</string>
+    <string-array name="observation_visite">
+        <item>Choisir une observation</item>
+        <item>Patient présent et accepte la visite</item>
+        <item>Patient présent mais refuse la visite</item>
+        <item>Patient absent mais l adresse est correcte</item>
+        <item>Patient absent, fausse adresse</item>
+        <item>Patient absent, déménagé</item>
+    </string-array>
+    <string-array name="nombres">
+        <item>Non renseigne</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="lieu_livraison">
+        <item>À domicile</item>
+        <item>À un point fixe</item>
+    </string-array>
+    <string-array name="duree_provision">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_suivi">Fiche de visite</string>
+
+
+</resources>

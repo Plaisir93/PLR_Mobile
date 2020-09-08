@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="#fff" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="true" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_view_patient_num"
+                android:textSize="16sp"
+                android:text="1"
+                android:textStyle="bold" />
+            <View 
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/ThemeColor"
+                android:layout_marginRight="15dp"/>
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView 
+                    android:id="@+id/tv_view_patient_nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joseph Nicolas Ermano"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+                
+                <TextView 
+                    android:id="@+id/tv_view_patient_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="26 ans"/>
+                <TextView 
+                    android:id="@+id/tv_view_patient_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+509 36 91 0311"/>
+                
+                <TextView 
+                    android:id="@+id/tv_view_patient_adresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17, sarthe 36"/>
+                
+                 
+                <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Nbre de suivis : "/>
+                <TextView 
+                    android:id="@+id/tv_view_patient_nb_suivis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"/>
+                </LinearLayout>
+                
+                <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">"
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Suivis en cours : "/>
+                <TextView 
+                    android:id="@+id/tv_view_patient_suivis_en_cours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"/>
+                </LinearLayout>                
+                <Button 
+                    android:id="@+id/bt_view_suivis_sync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Localisaton"
+                    android:drawableLeft="@drawable/ic_menu_mylocation"/>                
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

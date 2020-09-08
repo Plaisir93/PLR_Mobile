@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:orientation="vertical">
+       <TextView
+           android:id="@+id/tv_help"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_gravity="right"
+           android:textSize="12dp"
+           android:layout_marginTop="5dp"
+           android:paddingLeft="10dp"
+           android:background="@drawable/custom_button"
+           android:drawableRight="@android:drawable/ic_menu_help"
+           android:textStyle="bold"
+           android:textColor="#5577aa"
+           android:text="AIDE"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="10dp"
+           android:textSize="18dp"
+           android:textColor="@color/White"
+           android:text="Informations sur la visite"
+           android:background="@color/Goldenrod"/>
+       <TextView
+           android:id="@+id/tv_patient_a_visiter"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="serif"
+           android:textSize="22dp"
+           android:textStyle="bold|italic"
+           android:text="Nom Prénom"
+           />
+
+       <TextView
+           android:id="@+id/tv_raison_visite"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="16dp"
+           android:textStyle="bold"
+           android:text="Raison : Distribution de médicament"
+           />
+       <TextView
+           android:id="@+id/tv_adressepatient"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="14dp"
+           android:textStyle="italic"
+           android:text=""
+           />
+       <TextView
+           android:id="@+id/tv_lieuvisite"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="14dp"
+           android:textStyle="italic"
+           android:text="Type de visite : A domicile"
+           />
+       <TextView
+           android:id="@+id/tv_dureeprovision"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="14dp"
+           android:textStyle="italic"
+           android:text="Durée de la provision : 30 jours"
+           />
+       <TextView
+           android:id="@+id/tv_autremedicament"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="14dp"
+           android:textStyle="italic"
+           android:text="Autres médicaments : INH,COTRIMOX,FLUCONAZOLE"
+           />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:textSize="18dp"
+           android:textColor="@color/White"
+           android:text="Coordonnées GPS de ma position"
+           android:background="@color/Goldenrod"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <Button
+               android:id="@+id/bt_refreshgps"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:textSize="8dp"
+               android:text="Rafraichir"
+               android:background="@drawable/round_button"/>
+           <TextView
+               android:id="@+id/tv_gps"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:paddingTop="10dp"
+               android:paddingLeft="20dp"
+               android:textSize="10dp"
+               android:text=""
+               />
+        </LinearLayout>
+       <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:tools="http://schemas.android.com/tools"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:id="@+id/map"
+           tools:context="ht.solutions.plr.views.SuiviActivity"
+           android:name="com.google.android.gms.maps.SupportMapFragment" />
+       <CheckBox
+           android:id="@+id/ch_gps_ok"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:checked="true"
+           android:text="Cette position est bien le domicile du patient"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           android:textSize="18dp"
+           android:textColor="@color/White"
+           android:text="Observation faite lors de la visite"
+           android:background="@color/Goldenrod"/>
+       <CheckBox
+           android:id="@+id/ch_patient_recoit_medoc"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Le patient a reçu ses médicaments"/>
+       <Spinner
+           android:id="@+id/sp_observationvisite"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:spinnerMode="dropdown"
+           android:entries="@array/observation_visite" />
+
+   </LinearLayout>
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/Brown"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:text="Powered by SOLUTIONS S.A" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

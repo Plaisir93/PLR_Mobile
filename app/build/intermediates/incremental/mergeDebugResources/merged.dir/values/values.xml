@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools" xmlns:ns2="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="departement">
+        <item>--Choisir--</item>
+        <item>Artibonite</item>
+        <item>Centre</item>
+        <item>Grand-Anse</item>
+        <item>Nippes</item>
+        <item>Nord</item>
+        <item>Nord-Est</item>
+        <item>Nord-Ouest</item>
+        <item>Ouest</item>
+        <item>Sud</item>
+        <item>Sud-Est</item>
+    </string-array>
+    <string-array name="duree_provision">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="frequence_visite">
+        <item>--Choisir--</item>
+        <item>Tous les jours</item>
+        <item>Tous les dimanches</item>
+        <item/>
+        <item>Autre contact PV-VIH</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="lieu_groupe_frequente">
+        <item>--Choisir--</item>
+        <item>Eglise</item>
+        <item>Association</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="lieu_livraison">
+        <item>À domicile</item>
+        <item>À un point fixe</item>
+    </string-array>
+    <string-array name="moncash_natcash">
+        <item>Aucun</item>
+        <item>Moncash</item>
+        <item>Natcash</item>
+    </string-array>
+    <string-array name="nombres">
+        <item>Non renseigne</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="observation_visite">
+        <item>Choisir une observation</item>
+        <item>Patient présent et accepte la visite</item>
+        <item>Patient présent mais refuse la visite</item>
+        <item>Patient absent mais l adresse est correcte</item>
+        <item>Patient absent, fausse adresse</item>
+        <item>Patient absent, déménagé</item>
+    </string-array>
+    <string-array name="oui_non">
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+    <string-array name="preference_contact">
+        <item>--Choisir--</item>
+        <item>Téléphone</item>
+        <item>Visite</item>
+    </string-array>
+    <string-array name="statut_matrimoniale">
+        <item>--Choisir--</item>
+        <item>Célibataire</item>
+        <item>Concubinage</item>
+        <item>Marié(e)</item>
+        <item>Veuf</item>
+    </string-array>
+    <string-array name="statut_vih">
+    <item>--Choisir--</item>
+    <item>Positif</item>
+    <item>Négatif</item>
+    <item>Non déterminé</item>
+    </string-array>
+    <string-array name="type_contact">
+        <item>Parent Proche</item>
+        <item>Conjoint</item>
+        <item>Ami(e)</item>
+        <item>Paire</item>
+        <item>Autre contact PV-VIH</item>
+        <item>Autre</item>
+    </string-array>
+    <string-array name="type_tel">
+        <item>--Choisir--</item>
+        <item>Personnel</item>
+        <item>Domicile</item>
+        <item>Autre</item>
+    </string-array>
+    <color name="AliceBlue">#F0F8FF</color>
+    <color name="AntiqueWhite">#FAEBD7</color>
+    <color name="Aqua">#00FFFF</color>
+    <color name="Aquamarine">#7FFFD4</color>
+    <color name="Azure">#F0FFFF</color>
+    <color name="Beige">#F5F5DC</color>
+    <color name="Bisque">#FFE4C4</color>
+    <color name="Black">#000000</color>
+    <color name="BlanchedAlmond">#FFEBCD</color>
+    <color name="Blue">#0000FF</color>
+    <color name="BlueViolet">#8A2BE2</color>
+    <color name="Brown">#A52A2A</color>
+    <color name="BurlyWood">#DEB887</color>
+    <color name="CadetBlue">#5F9EA0</color>
+    <color name="Chartreuse">#7FFF00</color>
+    <color name="Chocolate">#D2691E</color>
+    <color name="Coral">#FF7F50</color>
+    <color name="CornflowerBlue">#6495ED</color>
+    <color name="Cornsilk">#FFF8DC</color>
+    <color name="Crimson">#DC143C</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="DarkCyan">#008B8B</color>
+    <color name="DarkGoldenrod">#B8860B</color>
+    <color name="DarkGray">#A9A9A9</color>
+    <color name="DarkGreen">#006400</color>
+    <color name="DarkKhaki">#BDB76B</color>
+    <color name="DarkMagenta">#8B008B</color>
+    <color name="DarkOliveGreen">#556B2F</color>
+    <color name="DarkOrange">#FF8C00</color>
+    <color name="DarkOrchid">#9932CC</color>
+    <color name="DarkRed">#8B0000</color>
+    <color name="DarkSalmon">#E9967A</color>
+    <color name="DarkSeaGreen">#8FBC8F</color>
+    <color name="DarkSlateBlue">#483D8B</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="DarkTurquoise">#00CED1</color>
+    <color name="DarkViolet">#9400D3</color>
+    <color name="DeepPink">#FF1493</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="DimGray">#696969</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="FireBrick">#B22222</color>
+    <color name="FloralWhite">#FFFAF0</color>
+    <color name="ForestGreen">#228B22</color>
+    <color name="Fuchsia">#FF00FF</color>
+    <color name="Gainsboro">#DCDCDC</color>
+    <color name="GhostWhite">#F8F8FF</color>
+    <color name="Gold">#FFD700</color>
+    <color name="Goldenrod">#DAA520</color>
+    <color name="Gray">#808080</color>
+    <color name="Green">#008000</color>
+    <color name="GreenYellow">#ADFF2F</color>
+    <color name="Honeydew">#F0FFF0</color>
+    <color name="HotPink">#FF69B4</color>
+    <color name="IndianRed">#CD5C5C</color>
+    <color name="Indigo">#4B0082</color>
+    <color name="Ivory">#FFFFF0</color>
+    <color name="Khaki">#F0E68C</color>
+    <color name="Lavender">#E6E6FA</color>
+    <color name="LavenderBlush">#FFF0F5</color>
+    <color name="LawnGreen">#7CFC00</color>
+    <color name="LemonChiffon">#FFFACD</color>
+    <color name="LightBlue">#ADD8E6</color>
+    <color name="LightCoral">#F08080</color>
+    <color name="LightCyan">#E0FFFF</color>
+    <color name="LightGoldenrodYellow">#FAFAD2</color>
+    <color name="LightGreen">#90EE90</color>
+    <color name="LightGrey">#D3D3D3</color>
+    <color name="LightPink">#FFB6C1</color>
+    <color name="LightSalmon">#FFA07A</color>
+    <color name="LightSeaGreen">#20B2AA</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="LightSlateGray">#778899</color>
+    <color name="LightSteelBlue">#B0C4DE</color>
+    <color name="LightYellow">#FFFFE0</color>
+    <color name="Lime">#00FF00</color>
+    <color name="LimeGreen">#32CD32</color>
+    <color name="Linen">#FAF0E6</color>
+    <color name="Magenta">#FF00FF</color>
+    <color name="Maroon">#800000</color>
+    <color name="MediumAquamarine">#66CDAA</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="MediumOrchid">#BA55D3</color>
+    <color name="MediumPurple">#9370DB</color>
+    <color name="MediumSeaGreen">#3CB371</color>
+    <color name="MediumSlateBlue">#7B68EE</color>
+    <color name="MediumSpringGreen">#00FA9A</color>
+    <color name="MediumTurquoise">#48D1CC</color>
+    <color name="MediumVioletRed">#C71585</color>
+    <color name="MidnightBlue">#191970</color>
+    <color name="MintCream">#F5FFFA</color>
+    <color name="MistyRose">#FFE4E1</color>
+    <color name="Moccasin">#FFE4B5</color>
+    <color name="NavajoWhite">#FFDEAD</color>
+    <color name="Navy">#000080</color>
+    <color name="OldLace">#FDF5E6</color>
+    <color name="Olive">#808000</color>
+    <color name="OliveDrab">#6B8E23</color>
+    <color name="Orange">#FFA500</color>
+    <color name="OrangeRed">#FF4500</color>
+    <color name="Orchid">#DA70D6</color>
+    <color name="PaleGoldenrod">#EEE8AA</color>
+    <color name="PaleGreen">#98FB98</color>
+    <color name="PaleTurquoise">#AFEEEE</color>
+    <color name="PaleVioletRed">#DB7093</color>
+    <color name="PapayaWhip">#FFEFD5</color>
+    <color name="PeachPuff">#FFDAB9</color>
+    <color name="Peru">#CD853F</color>
+    <color name="Pink">#FFC0CB</color>
+    <color name="Plum">#DDA0DD</color>
+    <color name="PowderBlue">#B0E0E6</color>
+    <color name="Purple">#800080</color>
+    <color name="Red">#FF0000</color>
+    <color name="RosyBrown">#BC8F8F</color>
+    <color name="RoyalBlue">#4169E1</color>
+    <color name="SaddleBrown">#8B4513</color>
+    <color name="Salmon">#FA8072</color>
+    <color name="SandyBrown">#F4A460</color>
+    <color name="SeaGreen">#2E8B57</color>
+    <color name="Seashell">#FFF5EE</color>
+    <color name="Sienna">#A0522D</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="SkyBlue">#87CEEB</color>
+    <color name="SlateBlue">#6A5ACD</color>
+    <color name="SlateGray">#708090</color>
+    <color name="Snow">#FFFAFA</color>
+    <color name="SpringGreen">#00FF7F</color>
+    <color name="SteelBlue">#4682B4</color>
+    <color name="Tan">#D2B48C</color>
+    <color name="Teal">#008080</color>
+    <color name="ThemeColor">#447090</color>
+    <color name="Thistle">#D8BFD8</color>
+    <color name="Tomato">#FF6347</color>
+    <color name="Turquoise">#40E0D0</color>
+    <color name="Violet">#EE82EE</color>
+    <color name="Wheat">#F5DEB3</color>
+    <color name="White">#FFFFFF</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="YellowGreen">#9ACD32</color>
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
+    <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
+    <color name="common_google_signin_btn_text_dark_pressed">@android:color/white</color>
+    <color name="common_google_signin_btn_text_light_default">#90000000</color>
+    <color name="common_google_signin_btn_text_light_disabled">#1F000000</color>
+    <color name="common_google_signin_btn_text_light_focused">#90000000</color>
+    <color name="common_google_signin_btn_text_light_pressed">#DE000000</color>
+    <declare-styleable name="LoadingImageView"><attr name="imageAspectRatioAdjust">
+<enum name="none" value="0"/>
+
+<enum name="adjust_width" value="1"/>
+
+<enum name="adjust_height" value="2"/>
+
+</attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
+    <declare-styleable name="MapAttrs"><attr name="mapType">
+<enum name="none" value="0"/>
+
+<enum name="normal" value="1"/>
+
+<enum name="satellite" value="2"/>
+
+<enum name="terrain" value="3"/>
+
+<enum name="hybrid" value="4"/>
+
+</attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/><attr format="boolean" name="ambientEnabled"/><attr format="float" name="cameraMinZoomPreference"/><attr format="float" name="cameraMaxZoomPreference"/><attr format="float" name="latLngBoundsSouthWestLatitude"/><attr format="float" name="latLngBoundsSouthWestLongitude"/><attr format="float" name="latLngBoundsNorthEastLatitude"/><attr format="float" name="latLngBoundsNorthEastLongitude"/></declare-styleable>
+    <declare-styleable name="SignInButton"><attr format="reference" name="buttonSize">
+<enum name="standard" value="0"/>
+
+<enum name="wide" value="1"/>
+
+<enum name="icon_only" value="2"/>
+
+</attr><attr format="reference" name="colorScheme">
+<enum name="dark" value="0"/>
+
+<enum name="light" value="1"/>
+
+<enum name="auto" value="2"/>
+
+</attr><attr format="reference|string" name="scopeUris"/></declare-styleable>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <integer name="google_play_services_version">11910000</integer>
+    <string name="a_whatsapp">A Whatsapp</string>
+    <string name="accepte_visite">Accepte visite à domicile</string>
+    <string name="action_settings">Se déconnecter</string>
+    <string name="add_text">Nouveau</string>
+    <string name="adresse_lieu_groupe_frequente">Adresse</string>
+    <string name="ajout_modif_contact">Ajout/Modifier le contact fonctionnel</string>
+    <string name="app_name">CHT</string>
+    <string name="cancel_text">Annuler</string>
+    <string name="client_locator_title">Forme de Localisation Patient</string>
+    <string name="com.crashlytics.android.build_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">06ac92b8-9bcf-42a7-b6f7-ef5592c9adbd</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run without Google Play services, which are missing from your device.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue"><ns2:g id="app_name">%1$s</ns2:g> is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run without Google Play services, which are not supported by your device.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run unless you update Google Play services.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t run without Google Play services, which are currently updating.</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="contact_tel">Contacts Téléphoniques</string>
+    <string name="default_web_client_id" translatable="false">463381878265-fordmfs75kekc3igb9e40vfgl13ptnmj.apps.googleusercontent.com</string>
+    <string name="est_prefere">Est le numéro préféré</string>
+    <string name="et_direction">Directions à domicile, y compris importantes repères près de la maison</string>
+    <string name="firebase_database_url" translatable="false">https://patient-linkage-and-retention.firebaseio.com</string>
+    <string name="frequence_visite_lieu_groupe_frequente">Fréquence de visite</string>
+    <string name="gcm_defaultSenderId" translatable="false">463381878265</string>
+    <string name="google_api_key" translatable="false">AIzaSyC8iK8bG5gg6HHfNp4syn9fXk7lvtesxEw</string>
+    <string name="google_app_id" translatable="false">1:463381878265:android:debad656ab3e0ee0</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC8iK8bG5gg6HHfNp4syn9fXk7lvtesxEw</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+         AIzaSyAhkVQUjLOcKe-64HOoMGyIWFSQYnQgaAY
+    </string>
+    <string name="google_storage_bucket" translatable="false">patient-linkage-and-retention.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="inf_personnelles">Informations Personnelles</string>
+    <string name="lieu_residence">Lieu de Résidence</string>
+    <string name="lieux_frquentes">Lieux/Groupes Fréquentés</string>
+    <string name="meme_adresse">Habite à la même adresse</string>
+    <string name="modif_adresse_physique">Modifier l\'adresse physique</string>
+    <string name="moncash_natcash">Moncash/Natcash</string>
+    <string name="numero_tel">Numéro Téléphone</string>
+    <string name="personnes_contact">Personnes de Contact</string>
+    <string name="project_id" translatable="false">patient-linkage-and-retention</string>
+    <string name="save_text">Enregistrer</string>
+    <string name="statut_vih">Statut VIH</string>
+    <string name="telephone_lieu_groupe_frequente">Téléphone</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_suivi">Fiche de visite</string>
+    <string name="tr_adresse">Adresse</string>
+    <string name="tr_avd">Accepte Visite Domicile</string>
+    <string name="tr_codeST">Code Identification</string>
+    <string name="tr_commune">Commune</string>
+    <string name="tr_departement">Département</string>
+    <string name="tr_dpd">Directions précise Domicile</string>
+    <string name="tr_institution">Institution</string>
+    <string name="tr_nom">Nom</string>
+    <string name="tr_nom_complet">Nom Complet</string>
+    <string name="tr_nouveau_tel">Nouveau Numéro Téléphone</string>
+    <string name="tr_prefContact">Préférence Contact</string>
+    <string name="tr_prenom">Prénom</string>
+    <string name="tr_statutM">Statut Matrimonial</string>
+    <string name="type_contact">Type de Contact</string>
+    <string name="type_lieu_groupe_frequente">Type</string>
+    <string name="type_tel">Type Téléphone</string>
+    <string name="verifier">Vérifier</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        
+    </style>
+</resources>

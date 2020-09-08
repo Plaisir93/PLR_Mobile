@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:text="@string/modif_adresse_physique"
+        android:textAlignment="center"
+        android:background="@color/Goldenrod"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/tr_departement"/>
+            <Spinner
+                android:id="@+id/sp_departement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:entries="@array/departement"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/tr_commune"/>
+            <Spinner
+                android:id="@+id/sp_commune"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_span="2"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/tr_adresse"/>
+            <EditText
+                android:focusable="false"
+                android:id="@+id/et_adresse"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_span="2"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="text"
+                android:minWidth="200dp" />
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/et_direction"
+                android:layout_span="3"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <EditText
+                android:focusable="false"
+                android:id="@+id/et_direction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_span="3"
+                android:background="@android:drawable/editbox_background"
+                android:inputType="text"
+                android:minWidth="200dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <CheckBox
+                android:id="@+id/ck_vis_domicile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accepte_visite" />
+
+            <Button
+                android:id="@+id/btsave_nInfPers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_text" />
+            <Button
+                android:id="@+id/btcancel_nInfPers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel_text" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/White"
+        android:text="Trouvailles"
+        android:background="@color/Goldenrod"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:stretchColumns="0">
+
+            <TableRow
+                android:id="@+id/tr_fraisnondisponible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <CheckBox
+                    android:id="@+id/ch_fraisnondisponible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frais de transport non disponible"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_oubli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_oubli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oubli"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_tropmalade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_tropmalade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Etat trop malade"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_servicesnonsatisfaisants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_servicesnonsatisfaisants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Services non satisfaisants"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_refuserecevoirsoins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_refuserecevoirsoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Refus de recevoir les soins"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_recherchesoins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_recherchesoins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recherche de soins alternatifs"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_decesdanslafamille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_decesdanslafamille"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Décès dans la famille"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_besoindetransfert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_besoindetransfert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Besoin de transfert"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_voyageinterurbain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_voyageinterurbain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voyage inter-urbain"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_migration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_migration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Migration"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_stigmatisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_stigmatisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stigmatisation"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_autostigmatisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_autostigmatisation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peur d'être vu dans un site de prise en charge de patients VIH+"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_occupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_occupation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Occupation/ Manque de temps"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_patientboitarv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_patientboitarv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patient boit ses ARV"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_patientseportebien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_patientseportebien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Le patient se porte bien"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_effetssecondaires"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_effetssecondaires"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ARV donne des effets secondaires"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_patientaratesesdoses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <CheckBox
+                    android:id="@+id/ch_patientaratesesdoses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patient a raté ses doses"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr_remarque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp">
+
+                <EditText
+                    android:id="@+id/et_remarque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:drawable/edit_text"
+                    android:gravity="top|left"
+                    android:hint="Autre trouvaille/ Remarque"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxEms="5"
+                    android:minLines="2"
+
+                    android:scrollbars="vertical" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@color/Brown"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:text="Powered by SOLUTIONS S.A" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

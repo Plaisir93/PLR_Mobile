@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+        <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_span="2"
+              android:text="Numero d&apos;identification du patient : "
+              android:textStyle="bold" />
+              <EditText 
+                    android:focusable="false"
+                    android:editable="false"
+                    android:id="@+id/et_patient_nid_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_span="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom : "
+                    android:textStyle="bold" />
+                <EditText android:editable="false"  
+                    android:focusable="false"
+                    android:id="@+id/et_patient_nom_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:text="Prenom : "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false"  
+                    android:focusable="false"
+                    android:id="@+id/et_patient_prenom_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+         
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Sexe : "
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_patient_sexe_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_patient_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masculin" />
+
+                    <RadioButton
+                        android:id="@+id/rb_patient_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Féminin" />
+                </RadioGroup>
+          
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date de naissance : "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_patient_date_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:minWidth="200dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:text="Age : "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false"  
+                    android:focusable="false"
+                    android:id="@+id/et_patient_age_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+           
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse domiciliaire : "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false"
+                    android:focusable="false"  
+                    android:id="@+id/et_patient_adresse_patient"
+                    android:layout_width="fill_parent"
+                    android:background="@android:drawable/editbox_background"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_span="2"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+                     <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tel : "
+                        android:textStyle="bold" />
+
+                    <EditText android:editable="false"  
+                        android:focusable="false"
+                        android:id="@+id/et_patient_tel_patient"
+                        android:layout_width="match_parent"
+                        android:background="@android:drawable/editbox_background"
+                        android:layout_height="wrap_content"
+                        android:hint=""
+                        android:inputType="phone" />
+  
+            
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    android:text="Lieu de residence : "
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+
+                    android:orientation="vertical" >
+
+                    <Spinner
+                        android:id="@+id/sp_patient_commune_residence"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Commune"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical" >
+
+                    <Spinner
+                        android:id="@+id/sp_patient_sectcommune_residence"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Section Communale"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+         
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    android:text="Lieu de naissance : "
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+
+                    <Spinner
+                        android:id="@+id/sp_patient_commune_naissance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Commune"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical" >
+
+                    <Spinner
+                        android:id="@+id/sp_patient_sectcommune_naissance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Section Communale"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+          
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom de la mere: "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false"  
+                    android:focusable="false"
+                    android:id="@+id/et_patient_nom_mere_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="Occupation : "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false"  
+                    android:focusable="false"
+                    android:id="@+id/et_patient_occupation_mere_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+           
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Nom et Prenom d&apos;une personne de contact : "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false" 
+                    android:focusable="false" 
+                    android:id="@+id/et_patient_nom_contact_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_span="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+          
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Numero de telephone du contact : "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false"  
+                    android:focusable="false"
+                    android:id="@+id/et_patient_tel_contact_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_span="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+           
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:text="Addresse du contact : "
+                    android:textStyle="bold" />
+
+                <EditText android:editable="false" 
+                    android:focusable="false" 
+                    android:id="@+id/et_patient_addresse_contact_patient"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_span="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:inputType="text"
+                    android:minWidth="200dp" />
+           
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:text="Suivis de ce patient "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+          
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#aaf"/>
+        <ListView
+            android:layout_marginTop="10dp"
+                    android:id="@+id/lv_patient_suivipatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:divider="#000"
+                    android:visibility="gone"
+                    android:dividerHeight="2dp" >
+                </ListView>
+                </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

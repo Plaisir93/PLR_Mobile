@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:id="@+id/ll_list_suivi" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="#dd9911" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Liste des visites à effectuer" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:stretchColumns="1" >
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="5dp" >
+            <Button
+                android:id="@+id/bt_load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charger"
+                android:onClick="charger"
+                android:background="@drawable/custom_button"/>
+
+            <EditText
+                android:id="@+id/sv_list_suivi_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/ic_search_api_holo_light"
+                android:hint="Rechercher..."
+                android:inputType="textFilter" />
+
+            <CheckBox
+                android:id="@+id/cb_list_suivi_synchronized"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:text="non Sync..." />
+            
+            <Button 
+                android:id="@+id/bt_list_suivi_sync_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sync"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/bt_suivi_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_find_previous_holo_light"
+                android:text=""
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bt_suivi_prec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_media_previous"
+                android:visibility="gone"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_list_suivi_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:visibility="gone"
+                 />
+
+            <Button
+                android:id="@+id/bt_suivi_suiv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_media_next"
+                android:text="" />
+
+            <Button
+                android:id="@+id/bt_suivi_last"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_find_next_holo_light"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_suivi_syncinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/editbox_background"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:text="Sync: 00/00" />
+        </TableRow>
+    </TableLayout>
+ 
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/DarkGoldenrod"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_span="5" >
+    </ListView> 
+</LinearLayout>

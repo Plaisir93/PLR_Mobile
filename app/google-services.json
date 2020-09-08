@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "463381878265",
+    "firebase_url": "https://patient-linkage-and-retention.firebaseio.com",
+    "project_id": "patient-linkage-and-retention",
+    "storage_bucket": "patient-linkage-and-retention.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463381878265:android:debad656ab3e0ee0",
+        "android_client_info": {
+          "package_name": "ht.solutions.plr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463381878265-fordmfs75kekc3igb9e40vfgl13ptnmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8iK8bG5gg6HHfNp4syn9fXk7lvtesxEw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

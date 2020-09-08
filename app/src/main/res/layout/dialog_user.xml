@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="match_parent" >
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="pseudo"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_user_pseudo"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="password"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_user_password"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="nom"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_user_nom"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="prenom"
+android:textStyle="bold"/>
+
+<EditText
+android:id="@+id/et_user_prenom"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:inputType="text"
+android:background="@android:drawable/editbox_background" />
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="sexe"
+android:textStyle="bold"/>
+
+<RadioGroup
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal" >
+
+<RadioButton
+android:id="@+id/rb_user_sexe_1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="M" />
+<RadioButton
+android:id="@+id/rb_user_sexe_2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="F" />
+</RadioGroup>
+<View
+android:layout_width="wrap_content"
+android:layout_height="15dp" />
+
+<TableLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:stretchColumns="2" >
+<TableRow>
+<Button
+android:id="@+id/btsave_user"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Enregistrer" />
+<Button
+android:id="@+id/btcancel_user"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Annuler" />
+</TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
